@@ -1,4 +1,4 @@
-import socket
+﻿import socket
 
 # server TCP
 # cài các chức năng cơ bản của 1 TCP server
