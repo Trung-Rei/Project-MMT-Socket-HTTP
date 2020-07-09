@@ -1,20 +1,84 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>
-			HTML HERE
-		</title>
-	</head>
-	<body>
-		<h1> Hello word ? </h1>
-		<div>
-		<form method="POST">
-			Username: <input type ="text" name="uname" required style="margin-left:20px;"></input><br>
-			Password: <input type ="password" name="pws" required style="margin-left:23px;"></input><br>
-			<input type ="submit" value ="Login" href = "nindex.html">
-		</form>
-		</div>
-		<img src="MARBLES.bmp" width="800" height="500">
-		
-	</body>
+<head>
+    <title>Login</title>
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        height: 100%;
+    }
+    body{
+        font-family: 'Segoe UI', sans-serif;;
+        font-size: 1rem;
+        line-height: 1.6;
+        height: 100%;
+    }
+    .wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #474e5d;
+    }
+    .login-form{
+        width: 350px;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        padding: 2rem;
+        background: #ffffff;
+    }
+    .form-input{
+        background: #fafafa;
+        border: 1px solid #eeeeee;
+        padding: 12px;
+        width: 100%;
+    }
+    .form-group{
+        margin-bottom: 1rem;
+    }
+    .form-button{
+        background: #69d2e7;
+        border: 1px solid #ddd;
+        color: #ffffff;
+        padding: 10px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    .form-button:hover{
+        background: #69c8e7;
+    }
+    .form-header{
+        text-align: center;
+        margin-bottom : 2rem;
+    }
+    .form-footer{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form class="login-form" action="" method="POST">
+            <div class="form-header">
+                <h3>Login</h3>
+                <p>Login to access your dashboard</p>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-input" name="uname" placeholder="username" required>
+            </div>
+            <!--Password Input-->
+            <div class="form-group">
+                <input type="password" class="form-input" name="psw" placeholder="password" required>
+            </div>
+            <div class="form-group">	
+                <button class="form-button" type="submit" href="nindex.html">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
 </html>
